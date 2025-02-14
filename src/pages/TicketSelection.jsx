@@ -124,15 +124,15 @@ const TicketSelection = () => {
 								Techember Fest ”25
 							</h2>
 							<p className='text-center w-[239px] md:w-[340px] mx-auto'>
-								Join us for an unforgettable experience at [Event Name]! Secure
+								Join us for an unforgettable experience at Techember! Secure
 								your spot now.
 							</p>
 						</div>
 						<p className='hidden md:flex'>
-							📍 [Event Location] || March 15, 2025 | 7:00pm
+							📍 360 behm drive lekki || March 15, 2025 | 7:00pm
 						</p>
 						<p className='w-[160px] flex md:hidden'>
-							📍 [Event Location] March 15, 2025 | 7:00pm
+							📍 360 behm drive lekkiMarch 15, 2025 | 7:00pm
 						</p>
 					</div>
 
