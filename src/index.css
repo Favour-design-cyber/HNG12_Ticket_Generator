@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Jeju+Myeongjo&family=Roboto:ital,wght@0,100..900;1,100..900&family=Road+Rage&family=Alatsi&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	* {
+		@apply m-0 p-0 box-border;
+	}
+
+	body {
+		background: radial-gradient(
+			circle,
+			rgba(3, 48, 56, 1) 0%,
+			rgba(2, 25, 29, 1) 100%
+		);
+		@apply w-[100vw] min-h-[100vh] h-auto flex justify-center items-center font-roboto text-[14px] md:text-[16px] text-white overflow-x-hidden;
+	}
+}
+
+@layer components {
+	.ticket {
+		background: radial-gradient(
+			circle,
+			rgba(7, 44, 49, 1) 0%,
+			rgba(7, 44, 49, 1) 100%
+		);
+		background-image: url('./assets/Subtract.png');
+	}
+
+	.ticket-main-container {
+		@apply w-[335px] md:w-[650px] lg:w-[700px] h-[1165px] md:h-[858px] pb-5 mx-auto m-auto border border-[#0E464F] rounded-3xl flex flex-col justify-center  bg-[#08252B] md:bg-[#041E23] my-10 relative;
+	}
+
+	.ticket-form-container {
+		@apply w-[90%] md:w-[90%] lg:w-[85%] h-full m-auto flex flex-col justify-evenly relative;
+	}
+
+	.ticket-form {
+		@apply w-full h-auto m-auto border-none md:border border-[#0E464F] rounded-3xl bg-[#08252B];
+	}
+
+	.fest-card-ctn {
+		@apply w-[287px] md:w-[556px] h-[243px] md:h-[200px] border border-[#07373F] mx-auto mt-5 rounded-3xl flex flex-col items-center justify-around px-2 pb-2 bg-[radial-gradient(circle,_rgba(7,55,63,1)_0%,_rgba(10,12,17,0.2)_100%)];
+	}
+	.grid-plan-ctn {
+		@apply grid grid-cols-1 md:grid-cols-3 w-[287px] md:w-[556px] h-[410px] md:h-[142px] border border-[#07373F] rounded-2xl max-md:gap-3 p-1 max-md:py-3;
+	}
+
+	.attendee-form .card-ctn {
+		@apply w-[287px] md:w-[556px] h-[328px] border border-[#07373F] bg-[#052228] mx-auto mt-5 rounded-3xl p-[12px] md:p-[24px];
+	}
+
+	.attendee-form .upload-img-ctn {
+		@apply absolute top-0 md:-top-4 w-[200px] md:w-[240px] h-[200px] md:h-[240px] border-[3px] border-[#249fb586] bg-[#0e464fc5] rounded-[32px] flex place-content-center hover:cursor-pointer;
+	}
+
+	.btn-ctn {
+		@apply w-[95%] justify-center items-center mx-auto h-[112px] md:h-[48px] flex flex-col md:flex-row mt-8 gap-5;
+	}
+
+	.nav-item {
+		@apply text-gray-400 hover:text-white;
+	}
+	.active-nav {
+		@apply text-white;
+	}
+}
+
+@layer utilities {
+	.d-flex {
+		@apply flex flex-col justify-center items-center;
+	}
+
+	.textarea {
+		@apply bg-transparent border border-[#07373F] w-full h-[127px] mt-2 rounded-xl pl-2 pt-2 outline-none;
+	}
+}
